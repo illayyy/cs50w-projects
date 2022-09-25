@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>Advanced Search</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="navbar-nav ms-auto me-2">
+                <a class="nav-item nav-link" href="index.html">Google Search</a>
+            </div>
+        </nav>
+
+        <div class="container2">
+            <p class="header label">Find pages with...</p>
+            <form action="https://google.com/search">
+                <label class="label">All these words:</label>
+                <input autocomplete="off" autofocus type="text" name="as_q" class="form-control adv_bar">
+
+                <label class="label">This exact word or phrase:</label>
+                <input autocomplete="off" autofocus type="text" name="as_epq" class="form-control adv_bar">
+
+                <label class="label">Any of these words:</label>
+                <input autocomplete="off" autofocus type="text" name="as_oq" class="form-control adv_bar">
+
+                <label class="label">None of these words:</label>
+                <input autocomplete="off" autofocus type="text" name="as_eq" class="form-control adv_bar">
+
+                <input type=submit value="Advanced Search" class="button2 btn btn-primary">
+            </form>
+        </div>
+    </body>
+</html>

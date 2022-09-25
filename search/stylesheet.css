@@ -1,0 +1,51 @@
+.container {
+  text-align: center;
+}
+
+.container2 {
+  margin-top: 45px;
+}
+
+.label {
+  margin-left: 20px
+}
+
+.icon-container{
+  margin-top: 10%;
+}
+
+.icon {
+  font-size: 150px;
+  color: #428bd5;
+}
+
+.search_bar {
+  margin: auto;
+  padding: 12px 25px;
+  width: max(50%, 400px);
+  display: block;
+}
+
+.adv_bar {
+  margin: 9px 25px;
+  padding: 12px 15px;
+  width: max(32%, 400px);
+  display: block;
+}
+
+.button {
+  margin: 30px 10px;
+}
+
+.button2 {
+  margin: 20px 20px;
+  background-color: #428bd5;
+  border-color: #428bd5;
+}
+
+.header {
+  font-size: 30px;
+  color: #428bd5;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
