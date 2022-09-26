@@ -1,0 +1,27 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+
+    <h2>{{ title }}</h2>
+
+    <div class="list-group">
+        {% for listing in listings %}
+            <a href="{% url 'listing' listing.id  %}" type="button" class="list-group-item list-group-item-action d-flex align-items-center">
+                <img src="{{ listing.image }}" alt="{{ listing.title }}" class="ms-auto listing_img">
+                <div class="ml-5">
+                    <h5><strong>{{ listing.title }}</strong></h5>
+                    <h6>Created by {{ listing.creator }}</h6>
+                    <p class="font-weight-light limit_char">
+                        {{ listing.description }}
+                    </p>
+                    {% if listing.active %}
+                        <h6><strong>Current bid: {{ listing.listing_bids.last.value|default:listing.starting_bid }}$</strong></h6>
+                    {% else %}
+                        <h6 class="text-danger"><strong>This listing is closed</strong></h6>
+                    {% endif %}
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+
+{% endblock %}
