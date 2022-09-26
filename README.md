@@ -1,4 +1,4 @@
-# CS50W
+# CS50W Projects
 A collection of all the projects I completed for Harvard CS50's course for Web Programming with Python and Javascript.  
   
 This repository is meant to be used for educational purposes only. Plagiarism goes against the academic honesty guidelines and is highly discouraged.  
