@@ -1,0 +1,56 @@
+textarea {
+    min-height: 400px;
+}
+
+h2 {
+    margin-top: 10px
+}
+
+.item-container {
+    border-bottom: 1px solid #d9d9d9;
+    cursor: pointer;
+}
+
+.item-container:hover {
+    background-color: #f6f6f6;
+}
+
+.item-sender, .item-subject, .item-timestamp {
+    display: inline-block;
+    padding: 10px;
+}
+
+.item-sender, .item-subject {
+    float: left;
+}
+
+.item-sender {
+    font-weight: bold;
+    min-width: 25ch;
+    background-color: rgba(0,0,0,0.02)
+}
+
+.item-timestamp {
+    float: right;
+}
+
+.item-linebreak {
+    float: none;
+    clear: both;
+}
+
+.item-container.item-read {
+    background-color: #eeeeee;
+}
+
+.item-container.item-read:hover {
+    background-color: #dfdfdf;
+}
+
+.item-container.item-read div {
+    color: #676767;
+}
+
+#email-timestamp {
+    margin-bottom: 10px;
+}
