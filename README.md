@@ -11,5 +11,5 @@ This repository will be updated over time with each new project submission.
 | 1 | Wiki | Django | a Wikipedia-like online encyclopedia. Allows users to search, create and edit entries.<br><br>Built using HTML, CSS, Bootstrap5, Python and Django.<br>Video Demo: https://youtu.be/t9a91CW6GM0 |
 | 2 | Commerce | Django, SQL | An eBay-like e-commerce auction site that allows users to post auction listings, place bids on listings, comment on those listings, and add listings to a "watchlist".<br><br>Built using HTML, CSS, Bootstrap4, Python, Django and SQLite.<br>Video Demo: https://youtu.be/p-X1axuXqe4 |
 | 3 | Mail | Javascript | A front-end for an email client that makes API calls to send and receive emails. Allows users to archive, reply, and mark emails as read.<br><br>Built using HTML, CSS, Javascript, Bootstrap4, Python, Django and SQLite.<br>Video Demo: https://youtu.be/HPaXwKXLp2U |
-| 4 | TBD | TBD | TBD |
+| 4 | Network | Javascript, APIs | a Twitter-like social network website. Allows users to follow other users, as well as post, edit and like posts.<br><br>Built using HTML, CSS, Javascript, Bootstrap4, Python, Django and SQLite.<br>Video Demo: https://youtu.be/x |
 | Final&#160;Project | TBD | TBD | TBD |
