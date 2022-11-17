@@ -1,0 +1,17 @@
+.body-container {
+    margin: 20px 20% 0 20%
+}
+
+.edit-button {
+    cursor: pointer
+}
+
+.alert-danger {
+    margin-bottom: 0;
+    padding: 0.5rem 1rem;
+    margin-top: 10px;
+}
+
+.fa-heart {
+    cursor: pointer
+}

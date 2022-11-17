@@ -1,0 +1,43 @@
+{% extends "network/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <h1 class="text-center">{{ title }}</h1>
+    {% if user.is_authenticated %}
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                    <textarea class="form-control mt-3" rows="4" placeholder="What's on your mind?"
+                              name="content"></textarea>
+                <input class="btn btn-primary mt-2" type="submit" value="Post">
+            </div>
+        </form>
+    {% endif %}
+    <div class="posts-container mt-4">
+        {% for post in page_object %}
+            <div class="border rounded p-3 mb-3">
+                <div class="mb-2"><a href="{% url 'profile' post.creator.id %}">{{ post.creator }}</a>
+                    <span class="text-secondary ml-3">{{ post.timestamp }}</span>
+                    {% if user.is_authenticated and user.id == post.creator.id %}
+                        <span class="badge badge-secondary edit-button" data-post_id="{{ post.id }}">Edit</span>
+                    {% endif %}
+                </div>
+
+                <div>{{ post.content }}</div>
+                {% if user.is_authenticated %}
+                    <div class="mt-2">
+                        <i class="fa-heart fa-regular
+                        {% if user in post.likes.all %}
+                            fa-solid
+                        {% endif %}
+                        " data-post_id="{{ post.id }}"></i><span class="ml-2">{{ post.likes.count }}</span>
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+
+    {% include "network/pagination.html" %}
+    <script src="{% static 'network/edit.js' %}"></script>
+    <script src="{% static 'network/like.js' %}"></script>
+{% endblock %}
